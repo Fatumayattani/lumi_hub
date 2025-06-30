@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./lumi4.png" alt="Logo" width="200"/>
+  <img src="public/lumil.png" alt="Logo" width="200"/>
 </p>
 
 # Lumi Hub - The Easiest Way to Sell Digital Products
