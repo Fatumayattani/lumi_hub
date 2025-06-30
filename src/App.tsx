@@ -71,39 +71,39 @@ function App() {
   };
 
   // Logo component with fallback
-  const Logo = ({ className = "h-8" }: { className?: string }) => {
-    return (
-      <div className={`${className} flex items-center transition-transform duration-300 hover:scale-105`}>
-        <img 
-          src="/ll.png" 
-          alt="Lumi Hub" 
-          className={`${className} transition-all duration-300`}
-          onError={(e) => {
-            const target = e.target as HTMLImageElement;
-            target.style.display = 'none';
-            const parent = target.parentElement;
-            if (parent && !parent.querySelector('.logo-fallback')) {
-              const fallback = document.createElement('div');
-              const sizeClass = className.includes('h-24') ? 'text-4xl' : 
-                               className.includes('h-20') ? 'text-3xl' : 
-                               className.includes('h-16') ? 'text-2xl' : 
-                               className.includes('h-12') ? 'text-xl' : 
-                               className.includes('h-10') ? 'text-lg' : 'text-base';
-              fallback.className = `logo-fallback ${className.replace('h-', 'h-')} bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-lg flex items-center justify-center font-bold ${sizeClass} px-3 shadow-lg`;
-              fallback.textContent = 'LH';
-              fallback.style.minWidth = className.includes('h-24') ? '96px' : 
-                                       className.includes('h-20') ? '80px' : 
-                                       className.includes('h-16') ? '64px' : 
-                                       className.includes('h-12') ? '48px' : 
-                                       className.includes('h-10') ? '40px' : 
-                                       className.includes('h-8') ? '32px' : '40px';
-              parent.appendChild(fallback);
-            }
-          }}
-        />
-      </div>
-    );
-  };
+const Logo = ({ className = "h-16 w-auto" }: { className?: string }) => {
+  return (
+    <div className="flex items-center transition-transform duration-300 hover:scale-105">
+      <img 
+        src="/luml.png" 
+        alt="Lumi Hub" 
+        className={`${className} object-contain transition-all duration-300`}
+        onError={(e) => {
+          const target = e.target as HTMLImageElement;
+          target.style.display = 'none';
+          const parent = target.parentElement;
+          if (parent && !parent.querySelector('.logo-fallback')) {
+            const fallback = document.createElement('div');
+            const sizeClass = className.includes('h-24') ? 'text-4xl' : 
+                             className.includes('h-20') ? 'text-3xl' : 
+                             className.includes('h-16') ? 'text-2xl' : 
+                             className.includes('h-12') ? 'text-xl' : 
+                             className.includes('h-10') ? 'text-lg' : 'text-base';
+            fallback.className = `logo-fallback ${className.replace('h-', 'h-')} bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-lg flex items-center justify-center font-bold ${sizeClass} px-3 shadow-lg`;
+            fallback.textContent = 'Lumi Hub';
+            fallback.style.minWidth = className.includes('h-24') ? '96px' : 
+                                     className.includes('h-20') ? '80px' : 
+                                     className.includes('h-16') ? '64px' : 
+                                     className.includes('h-12') ? '48px' : 
+                                     className.includes('h-10') ? '40px' : 
+                                     className.includes('h-8') ? '32px' : '40px';
+            parent.appendChild(fallback);
+          }
+        }}
+      />
+    </div>
+  );
+};
 
   if (loading) {
     return (
@@ -165,6 +165,10 @@ function App() {
                 
                 {/* Desktop Navigation */}
                 <div className="hidden lg:flex gap-8 items-center">
+                  <div className="flex gap-2 items-center">
+    <img src="/boltt.png" alt="Sticker 1" className="w-10 h-10 object-contain" />
+    <img src="/alg.svg" alt="Sticker 2" className="w-10 h-12 object-contain" />
+  </div>
                   <a href="#features" className="text-gray-700 hover:text-orange-500 transition-all duration-300 font-medium hover:scale-105">Features</a>
                   <a href="#pricing" className="text-gray-700 hover:text-orange-500 transition-all duration-300 font-medium hover:scale-105">Pricing</a>
                   <button 
