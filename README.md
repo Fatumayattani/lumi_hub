@@ -43,6 +43,8 @@ Lumi Hub is built using a modern and efficient technology stack:
 ```
 The frontend communicates with Supabase for all data operations and authentication, while Algorand blockchain integration handles payment processing. Digital assets are securely stored in Supabase Storage and delivered only after successful payment verification.
 
+```
+
 ## Installation
 
 To run Lumi Hub locally, follow these steps:
