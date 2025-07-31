@@ -40,10 +40,10 @@ Lumi Hub is built using a modern and efficient technology stack:
 *   **Deployment:**
     *   **Netlify:** For continuous deployment and hosting of the frontend application.
 
-```
+
 The frontend communicates with Supabase for all data operations and authentication, while Algorand blockchain integration handles payment processing. Digital assets are securely stored in Supabase Storage and delivered only after successful payment verification.
 
-```
+
 
 ## Installation
 
