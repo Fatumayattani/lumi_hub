@@ -77,7 +77,7 @@ To run Lumi Hub locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/lumihub.git
+   git clone https://github.com/Fatumayattani/lumi_hub.git
    cd lumihub
    ```
 
