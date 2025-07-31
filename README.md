@@ -121,21 +121,21 @@ The production version of Lumi Hub is available at:
 - Marketplace browsing
 - User authentication
 
-### Near-term (Q3-Q4 2023)
+### Near-term (Q3-Q4 2025)
 - [ ] Enhanced analytics dashboard
 - [ ] Multi-file product support
 - [ ] Subscription-based products
 - [ ] Improved search and filtering
 - [ ] Creator referral program
 
-### Mid-term (2024)
+### Mid-term (2026)
 - [ ] NFT-based digital products
 - [ ] Expanded blockchain support (Ethereum, Solana)
 - [ ] Mobile app development
 - [ ] Affiliate marketing system
 - [ ] Advanced store customization
 
-### Long-term (2025+)
+### Long-term (2026+)
 - [ ] AI-powered product recommendations
 - [ ] Decentralized storage integration (IPFS)
 - [ ] Creator collaboration features
