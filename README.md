@@ -40,35 +40,7 @@ Lumi Hub is built using a modern and efficient technology stack:
 *   **Deployment:**
     *   **Netlify:** For continuous deployment and hosting of the frontend application.
 
-## Project Architecture
-
-Lumi Hub follows a modern full-stack architecture with clear separation of concerns:
-
 ```
-Lumi Hub Architecture
-├── Frontend (Client)
-│   ├── React + TypeScript
-│   ├── Vite build system
-│   ├── Tailwind CSS for styling
-│   ├── Wallet integration (Algorand)
-│   └── Supabase client for authentication and data
-│
-├── Backend (Supabase)
-│   ├── PostgreSQL Database
-│   │   ├── Users table
-│   │   ├── Products table
-│   │   ├── Stores table
-│   │   └── Transactions table
-│   ├── Authentication
-│   ├── Storage (Files, Images)
-│   └── Edge Functions (Payment processing)
-│
-└── Blockchain (Algorand)
-    ├── Testnet/Mainnet connection
-    ├── Smart contracts
-    └── Transaction processing
-```
-
 The frontend communicates with Supabase for all data operations and authentication, while Algorand blockchain integration handles payment processing. Digital assets are securely stored in Supabase Storage and delivered only after successful payment verification.
 
 ## Installation
